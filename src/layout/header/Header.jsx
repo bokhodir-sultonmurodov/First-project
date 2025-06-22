@@ -22,7 +22,7 @@ const Header = () => {
       </div>
 
      
-      <nav className="hidden md:flex gap-[30px] lg:gap-[75px] text-[14px] sm:text-[16px] font-medium text-gray-800">
+      <nav className="hidden md:flex gap-[30px] lg:gap-[75px] text-[14px] sm:text-[16px] font-medium text-[#000000]">
         <NavLink to="/" className="hover:text-yellow-700">Home</NavLink>
         <NavLink to="/shop" className="hover:text-yellow-700">Shop</NavLink>
         <NavLink to="/about" className="hover:text-yellow-700">About</NavLink>
@@ -31,7 +31,7 @@ const Header = () => {
 
      
       <div className="hidden md:flex items-center gap-4 sm:gap-6 lg:gap-[45px] text-black text-lg">
-        <button ><UserOutlined style={{ fontSize: '22px' }} /></button>
+        <button ><UserOutlined style={{ fontSize: '22px'}}  /></button>
         <button ><SearchOutlined style={{ fontSize: '22px' }} /></button>
         <button ><HeartOutlined style={{ fontSize: '22px' }} /></button>
         <button ><ShoppingCartOutlined style={{ fontSize: '22px' }} /></button>
@@ -46,8 +46,8 @@ const Header = () => {
           onClose={() => setOpen(false)}
           open={open}
         >
-          <div className="flex flex-col gap-4 text-lg font-medium">
-            <NavLink onClick={() => setOpen(false)} to="/">Home</NavLink>
+          <div className="flex flex-col gap-4 text-lg font-medium ">
+            <NavLink onClick={() => setOpen(false)}  to="/">Home</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/shop">Shop</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/about">About</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/contact">Contact</NavLink>
