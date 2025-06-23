@@ -13,7 +13,7 @@ const Home = () => {
       <Range/>
       <Products/>
       <Carousel/>
-      <Gallery/>
+      {/* <Gallery/> */}
     </div>
   )
 }
